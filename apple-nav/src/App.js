@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import { Route } from 'react-router-dom';
+import { NavWrapper, TopNav, SubNav } from './components/Navigation/';
+
+const links = [
+  "Mac",
+  "iPad",
+  "iPhone",
+  "Watch",
+  "TV",
+  "Music",
+  "Support",
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavWrapper>
+        <TopNav links={links}/>
+        <SubNav />
+      </NavWrapper>
     </div>
   );
 }
