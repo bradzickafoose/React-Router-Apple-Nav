@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
 // import { Route } from 'react-router-dom';
 import { NavWrapper, TopNav, SubNav } from './components/Navigation/';
@@ -18,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <NavWrapper>
+        <h1>Apple</h1>
         <TopNav links={links}/>
         <SubNav />
       </NavWrapper>
